@@ -31,7 +31,7 @@ function validate(field, value) {
       return 'Please enter a valid email address';
   }
   if (field === 'phone' && value) {
-    if (!/^[\d\s\+\-\(\)]{7,15}$/.test(value))
+    if (!/^[\d\s+\-()]{7,15}$/.test(value))
       return 'Please enter a valid phone number';
   }
   return '';

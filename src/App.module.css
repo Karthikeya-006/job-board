@@ -1,0 +1,66 @@
+.app {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.navbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brandName {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  color: var(--accent);
+  letter-spacing: -0.3px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 4px;
+}
+
+.navBtn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  transition: all 0.15s;
+  background: none;
+}
+
+.navBtn:hover {
+  background: var(--surface2) !important;
+}
+
+@media (max-width: 480px) {
+  .navBtn span {
+    display: none;
+  }
+
+  .navBtn {
+    padding: 8px 10px;
+  }
+}

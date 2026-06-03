@@ -1,0 +1,368 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 36px 24px 60px;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: var(--text2);
+}
+
+/* Progress Card */
+.progressCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  margin-bottom: 24px;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.progressLabel {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.progressHint {
+  font-size: 12px;
+  color: var(--text3);
+}
+
+.progressPct {
+  font-family: 'Syne', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  transition: color 0.3s;
+}
+
+.progressBar {
+  height: 8px;
+  background: var(--surface2);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.4s ease, background 0.4s ease;
+}
+
+.fieldPills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+/* Form Card */
+.formCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.avatarSection {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.avatarPreview {
+  flex-shrink: 0;
+}
+
+.avatarCircle {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+}
+
+.avatarUpload {
+  flex: 1;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 24px 0;
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fieldLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  color: var(--text);
+  background: var(--surface);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(42, 95, 78, 0.12);
+}
+
+.textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  color: var(--text);
+  background: var(--surface);
+  resize: vertical;
+  line-height: 1.6;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  min-height: 100px;
+}
+
+.textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(42, 95, 78, 0.12);
+}
+
+.errorMsg {
+  font-size: 12px;
+  color: #E24B4A;
+  display: flex;
+  align-items: center;
+}
+
+/* Skill Input */
+.skillRow {
+  display: flex;
+  gap: 8px;
+}
+
+.skillInput {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  color: var(--text);
+  background: var(--surface);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.skillInput:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(42, 95, 78, 0.12);
+}
+
+.addBtn {
+  padding: 10px 16px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Syne', sans-serif;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+}
+
+.addBtn:hover {
+  opacity: 0.87;
+}
+
+.skillTags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.skillTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-light);
+  color: var(--accent-text);
+  padding: 5px 10px 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.removeSkill {
+  background: none;
+  border: none;
+  color: var(--accent-text);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.removeSkill:hover {
+  opacity: 1;
+}
+
+/* File Upload */
+.fileZone {
+  border: 2px dashed;
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.fileZone:hover {
+  border-color: var(--accent) !important;
+  background: var(--accent-light) !important;
+}
+
+.fileUploaded,
+.fileEmpty {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.fileName {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-text);
+  margin-bottom: 2px;
+  word-break: break-all;
+}
+
+.fileLabel {
+  font-size: 13px;
+  color: var(--text2);
+  margin-bottom: 2px;
+}
+
+.fileHint {
+  font-size: 11px;
+  color: var(--text3);
+}
+
+/* Form Footer */
+.formFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.footerNote {
+  font-size: 13px;
+  color: var(--text3);
+  display: flex;
+  align-items: center;
+}
+
+.saveBtn {
+  display: flex;
+  align-items: center;
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  color: #fff;
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  transition: opacity 0.15s, transform 0.1s;
+}
+
+.saveBtn:hover {
+  opacity: 0.87;
+  transform: scale(0.98);
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .avatarSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fieldGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formFooter {
+    flex-direction: column;
+    gap: 14px;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .saveBtn {
+    justify-content: center;
+  }
+}

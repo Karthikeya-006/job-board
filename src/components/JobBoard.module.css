@@ -1,0 +1,151 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 36px 24px 60px;
+}
+
+.hero {
+  margin-bottom: 32px;
+}
+
+.heroTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.heroSub {
+  font-size: 15px;
+  color: var(--text2);
+}
+
+.controls {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.searchWrap {
+  flex: 1;
+  min-width: 220px;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 11px 38px 11px 40px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-size: 14px;
+  color: var(--text);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.clearBtn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text3);
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.clearBtn:hover {
+  color: var(--text2);
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  border: 1px solid;
+  font-size: 13px;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.filterBtn:hover {
+  border-color: var(--accent) !important;
+}
+
+.resultsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.resultsCount {
+  font-size: 13px;
+  color: var(--text3);
+}
+
+.appliedBadge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  background: var(--accent-light);
+  color: var(--accent-text);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.empty {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.resetBtn {
+  margin-top: 16px;
+  padding: 9px 20px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Syne', sans-serif;
+  transition: opacity 0.15s;
+}
+
+.resetBtn:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 640px) {
+  .heroTitle {
+    font-size: 26px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .searchWrap {
+    width: 100%;
+  }
+}
